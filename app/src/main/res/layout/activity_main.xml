@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="myView"
+            type="com.example.databinding.Utils" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:onClick="@{(v)-> myView.onClick(v,@string/app_name)}"
+            android:text="@{myView.string}"
+            app:layoutHeight="@{@dimen/_30 * @dimen/_ratio}"
+            app:margin="@{@dimen/_16 * @dimen/_ratio}" />
+
+        <!--app:marginBottom="@{@dimen/_16 * @dimen/_ratio}"-->
+        <!--app:marginLeft="@{@dimen/_16 * @dimen/_ratio}"-->
+        <!--app:marginRight="@{@dimen/_16 * @dimen/_ratio}"-->
+        <!--app:marginTop="@{@dimen/_16 * @dimen/_ratio}"-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv"
+            android:background="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+</layout>
+

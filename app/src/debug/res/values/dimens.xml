@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_30" >30dp</dimen>
+    <dimen name="_16" >16dp</dimen>
+    <dimen name="_ratio" format="float">1.1dp</dimen>
+
+    <!--<item name="_30" type="integer">30</item>-->
+    <!--<item name="_ratio" type="integer">2</item>-->
+</resources>
